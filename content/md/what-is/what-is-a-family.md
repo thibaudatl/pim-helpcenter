@@ -2,13 +2,14 @@
 id: what-is-a-family
 themes: first-steps, akeneo-concepts
 title: What is a family?
+related: manage-your-families
 ---
 
-# Definition of a family
+# Introduction to Akeneo's families
 
 ![what-is-a-family](../img/What-is-a-family.svg)
 
-A family is **a set of attributes** that is shared by products belonging to the same family. In other words, a family can be considered to something similar as a **product template**.
+In Akeneo, a family is **a set of attributes** that is shared by products belonging to the same family. In other words, a family can be considered to something similar as a **product template**.
 
 When a product is added to a family, it automatically inherits from all attributes defined at the family level. A product **can belong to only one family** (but a product can be without family, in this case, it has no default attributes).
 
@@ -39,9 +40,13 @@ A hammer will also have a product identifier (a sku for instance), a GTIN/EAN co
 
 So, a family can use all the attributes available in the PIM and a same attribute can be used in several families, most of your products will have a description, a name, an identifier...
 
+:::info
+Since completeness is calculated at the family level, a product without family will not have any completeness.
+:::
+
 # Properties of families
 
-Each family has **a code and a label**. The label can be translated in any activated locale.
+Each family has **a code** and **a label**. The label can be translated in any enabled locale.
 
 ::: tips
 - A product **can belong to only one family**.
